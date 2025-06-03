@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!-- TODO: 修改页面标题 -->软件发布中心 | 产品下载</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fas fa-cloud-download-alt"></i> <!-- TODO: 修改主标题 -->软件发布中心</h1>
+        <p><!-- TODO: 修改副标题描述 -->在这里获取我们最新的软件产品，Windows版本正在紧张开发中，即将推出！</p>
+        <div class="device-info" id="device-info">
+            <i class="fas fa-info-circle"></i> 正在检测您的设备类型...
+        </div>
+    </div>
+
+    <div class="platform-tabs">
+        <div class="tab active" data-target="android-card">Android</div>
+        <div class="tab" data-target="windows-card">Windows</div>
+    </div>
+
+    <div class="container">
+        <!-- Windows 平台卡片 -->
+        <div class="card" id="windows-card" style="position:relative;">
+            <div class="platform-header">
+                <div class="icon-placeholder">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <div class="platform-info">
+                    <h2><!-- TODO: 修改产品名 -->Windows 桌面版</h2>
+                    <p><!-- TODO: 修改产品描述 -->专业桌面软件 | v1.0.0 (开发中)</p>
+                </div>
+            </div>
+            <div class="description">
+                <h3><i class="fas fa-info-circle"></i> 软件简介</h3>
+                <p><!-- TODO: 修改软件简介 -->这款强大的桌面应用程序专为提升工作效率而设计，集成了先进的数据处理功能和直观的用户界面，适用于各种专业场景。</p>
+                <div class="features">
+                    <!-- TODO: 修改功能点 -->
+                    <div class="feature"><i class="fas fa-check-circle"></i> 多任务并行处理</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 高级数据分析</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 自定义工作空间</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 实时协作功能</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 智能自动化</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 云端同步</div>
+                </div>
+            </div>
+            <div class="download-section">
+                <h3><i class="fas fa-download"></i> 下载安装</h3>
+                <a class="download-btn disabled"><!-- TODO: 修改按钮文案 -->即将推出 - 开发中</a>
+                <div class="version-info">
+                    <!-- TODO: 修改系统要求和大小 -->系统要求：Windows 10/11 | 64位 | 大小：95.2 MB
+                </div>
+                <div class="status-info">
+                    <i class="fas fa-tools"></i> <!-- TODO: 修改开发进度说明 -->Windows版本正在积极开发中，预计2023年第四季度发布
+                </div>
+            </div>
+            <div class="pc-suggestion">
+                <i class="fas fa-info-circle"></i> <!-- TODO: 修改建议文案 -->Windows版本正在开发中，您也可以尝试我们的Android应用
+            </div>
+        </div>
+        <!-- Android 平台卡片 -->
+        <div class="card" id="android-card">
+            <div class="platform-header">
+                <div class="icon-placeholder">
+                    <i class="fab fa-android"></i>
+                </div>
+                <div class="platform-info">
+                    <h2><!-- TODO: 修改产品名 -->Android 移动版</h2>
+                    <p><!-- TODO: 修改产品描述 -->移动端应用 | v1.2.5 (最新版)</p>
+                </div>
+            </div>
+            <div class="description">
+                <h3><i class="fas fa-info-circle"></i> 软件简介</h3>
+                <p><!-- TODO: 修改软件简介 -->随时随地访问您的数据和工具。我们的移动应用提供完整的移动体验，与桌面版完美同步，专为移动设备优化操作体验。</p>
+                <div class="features">
+                    <!-- TODO: 修改功能点 -->
+                    <div class="feature"><i class="fas fa-check-circle"></i> 移动端优化</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 离线模式</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 即时通知</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 相机集成</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 手势控制</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 省电模式</div>
+                </div>
+            </div>
+            <div class="download-section">
+                <h3><i class="fas fa-download"></i> 下载安装</h3>
+                <a href="#" class="download-btn"><!-- TODO: 替换为实际下载链接 -->下载 Android 版</a>
+                <div class="version-info">
+                    <!-- TODO: 修改系统要求和大小 -->系统要求：Android 8.0及以上 | 大小：42.7 MB
+                </div>
+                <div class="status-info">
+                    <i class="fas fa-star"></i> <!-- TODO: 修改下载量和评分 -->当前版本已下载超过50万次，评分4.8/5.0
+                </div>
+            </div>
+            <div class="mobile-suggestion">
+                <i class="fas fa-mobile-alt"></i> <!-- TODO: 修改建议文案 -->您正在使用移动设备，这是最适合您的版本
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            <i class="fas fa-envelope"></i> 技术支持：<!-- TODO: 填写真实邮箱 -->support@yourcompany.com
+            | <i class="fas fa-globe"></i> 官方网站：<!-- TODO: 填写真实网址 -->www.yourcompany.com
+        </p>
+        <p>© <span id="year"></span> <!-- TODO: 修改公司名 -->软件发布中心 | 所有权利保留</p>
+    </div>
+    <div class="notification" id="notification">
+        <!-- TODO: 修改通知内容 -->您选择了Android版本，即将开始下载...
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
