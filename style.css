@@ -69,6 +69,8 @@
             max-width: 900px;
             animation: fadeIn 1s ease-out;
             width: 100%;
+            padding-top: 48px;    /* PC端顶部留白加大 */
+            padding-bottom: 16px; /* PC端底部留白适当增加 */
         }
 
         .header h1 {
@@ -87,6 +89,13 @@
             line-height: 1.6;
             max-width: 700px;
             margin: 0 auto 20px;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding-top: 32px;  /* 移动端顶部留白加大 */
+                padding-bottom: 12px;
+            }
         }
 
         /* ===== 设备检测提示 ===== */
@@ -346,4 +355,10 @@
 
         #windows-card {
             position: relative;
+        }
+
+        .site-logo {
+            height: 1.6em;
+            vertical-align: middle;
+            margin-right: 10px;
         }
