@@ -1,4 +1,4 @@
-        /* ===== 基础样式 ===== */
+/* ===== 基础样式 ===== */
         * {
             margin: 0;
             padding: 0;
@@ -46,6 +46,7 @@
         .card {
             /* 玻璃拟态效果 - 可调整模糊强度 */
             background: rgba(255, 255, 255, 0.08);
+            -webkit-backdrop-filter: blur(10px); /* 兼容 Safari 9+ 和 iOS 9+ */
             backdrop-filter: blur(10px); /* 修改此值调整模糊强度 */
             border-radius: 16px;
             padding: 30px; /* PC端内边距 */
@@ -342,4 +343,7 @@
             animation: fadeIn 0.5s;
             z-index: 1000;
         }
-        
+
+        #windows-card {
+            position: relative;
+        }
